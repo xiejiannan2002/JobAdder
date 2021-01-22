@@ -2,20 +2,20 @@
 1. Introduction 
    It is a .Net Core & Angular Project
 
-   front end angular component: \JobAdder\CandidateFinder\ClientApp\src\app\home
-   web api (receive request from angular page): \JobAdder\CandidateFinder\Controllers\HomeController.cs
-   main logic & business: \JobAdder\CandidateFinder\Business\DataProcessing.cs
-   configuration file: \JobAdder\CandidateFinder\appsettings.json
-   independent testing framework: \JobAdder\CandidateFinderUnitTest
+   1. front end angular component: \JobAdder\CandidateFinder\ClientApp\src\app\home
+   2. web api (receive request from angular page): \JobAdder\CandidateFinder\Controllers\HomeController.cs
+   3. main logic & business: \JobAdder\CandidateFinder\Business\DataProcessing.cs
+   4. configuration file: \JobAdder\CandidateFinder\appsettings.json
+   5. independent testing framework: \JobAdder\CandidateFinderUnitTest
 
 
 2. How to run the program
-   download the sourcecode
-   unzip it
-   open CandidateFinder.sln in visual studio 2019
-   build the project (may take few minutes, as it needs to restore npm package)
-   run the project, you will see the result in browser
-   (Note: such as API Uri has been configed at appsettings.json)
+   1. download the sourcecode
+   2. unzip it
+   3. open CandidateFinder.sln in visual studio 2019
+   4. build the project (may take few minutes, as it needs to restore npm package)
+   5. run the project, you will see the result in browser
+   6. (Note: such as API Uri has been configed at appsettings.json)
    
    
 3. Something more
