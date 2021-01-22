@@ -20,8 +20,8 @@
    
 3. Something more
    1. peformance: 
-      a. using cache to avoid requesting data from web api every time 
-	  b. async function to avoid waiting more times on front time
+      1. using cache to avoid requesting data from web api every time 
+      2. async function to avoid waiting more times on front time
    2. reliability: TDD, writing independent test cases
    3. scalability: everything is configurable at appsettings.json
    4. Clarification: there is one thing which requirement doesn't specified clearly
