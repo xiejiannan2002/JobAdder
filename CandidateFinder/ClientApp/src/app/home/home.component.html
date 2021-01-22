@@ -1,0 +1,31 @@
+<h1>Searching result</h1>
+<p *ngIf="!currentJobs"><em>Loading...</em></p>
+<table *ngIf="currentJobs" class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>Job</th>
+      <th>Company</th>
+      <th>Required Skills</th>
+      <th>Best Candidate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="currentJobs && currentJobs.length == 0">
+      <td colspan="4">
+        <label>No Searching result available</label>
+      </td>
+    </tr>
+    <tr *ngFor="let job of currentJobs | slice: startIndex():endIndex()">
+      <td>{{ job.name }}</td>
+      <td>{{ job.company }}</td>
+      <td>{{ job.skills }}</td>
+      <td *ngIf="job.candidate">Name: {{ job.candidate.name }} <br /> Skills: {{job.candidate.skillTags}}</td>
+      <td *ngIf="!job.candidate">No qualified Candidate for the role</td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="currentJobs && currentJobs.length > pageCount">
+  <input type="button" value="Prev" (click)="Up();">
+  &nbsp;&nbsp;&nbsp;
+  <input type="button" value="Next" (click)="Down();">
+</div>
